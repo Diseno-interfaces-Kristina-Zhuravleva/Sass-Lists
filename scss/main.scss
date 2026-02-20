@@ -1,0 +1,65 @@
+@use "sass:list";
+@use "sass:color";
+@use "sass:map";
+
+$buttons: primary blue white, secondary gray black, danger red white;
+$selected-colors: (
+  "primary",
+  "danger",
+  "success"
+);
+$colors: (
+  "primary": blue,
+  "secondary": gray,
+  "danger": red,
+  "success": green,
+  "warning": yellow,
+  "info": cyan,
+  "light": lightgray,
+  "dark": black
+);
+
+
+@each $color in $buttons {
+
+  $variant: list.nth($color, 1);
+
+  .btn-#{$variant} {
+
+    background-color: list.nth($color, 2);
+    color: list.nth($color, 3);
+
+  }
+}
+
+//2
+@each $key, $color in $colors {
+  .text-#{$key} {
+    color: $color;
+
+  }
+}
+
+  @each $color in $selected-colors {
+    .background-#{$color} {
+      background-color: map.get($colors, $color);
+
+    }
+    .text-#{$color} {
+      color: map.get($colors, $color);
+
+    }
+  }
+  //3
+  $margin-level: ("margin-1": 1rem, "margin-2": 2rem, "margin-3": 3rem);
+  $contador: 1;
+
+@each $key, $margin in $margin-level {
+  .margin-#{$contador} {
+    margin: $margin;
+  }
+
+  $contador: $contador + 1;
+}
+
+  

@@ -1,0 +1,84 @@
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: black;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.text-secondary {
+  color: gray;
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-warning {
+  color: yellow;
+}
+
+.text-info {
+  color: cyan;
+}
+
+.text-light {
+  color: lightgray;
+}
+
+.text-dark {
+  color: black;
+}
+
+.background-primary {
+  background-color: blue;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.background-danger {
+  background-color: red;
+}
+
+.text-danger {
+  color: red;
+}
+
+.background-success {
+  background-color: green;
+}
+
+.text-success {
+  color: green;
+}
+
+.margin-1 {
+  margin: 1rem;
+}
+
+.margin-2 {
+  margin: 2rem;
+}
+
+.margin-3 {
+  margin: 3rem;
+}
+
+/*# sourceMappingURL=main.css.map */
